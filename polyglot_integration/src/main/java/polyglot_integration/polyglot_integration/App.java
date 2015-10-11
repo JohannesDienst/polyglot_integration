@@ -65,6 +65,6 @@ public class App
       System.out.println("Sum of age: " + sum);
 
       ClojureWrapper clj = new ClojureWrapper();
-      System.out.println("Sum with wrapper:" + clj.sumBy(javaPersons));
+      System.out.println("Sum with wrapper:" + clj.sumAge(javaPersons));
     }
 }

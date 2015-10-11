@@ -11,7 +11,7 @@ public class ClojureWrapper extends ClojureNamespace {
     super("csv-utils.core");
   }
 
-  public Long sumBy (List<Person> persons) {
+  public Long sumAge (List<Person> persons) {
     return (Long) fn("sum-age").invoke(
         data.fn("from-java").invoke(persons));
   }
