@@ -1,5 +1,6 @@
 package polyglot_integration.polyglot_integration;
 
+import polyglot_integration.scala.EvilReviewer;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,8 +34,8 @@ public class AppTest
      */
     public void testApp()
     {
-    	App app = new App();
-    	app.invokeClojure();
-        assertTrue( true );
+//    	App app = new App();
+//    	app.invokeClojure();
+//        assertTrue( true );
     }
 }

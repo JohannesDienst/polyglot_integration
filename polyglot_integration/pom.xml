@@ -33,6 +33,24 @@
 		<artifactId>clojure</artifactId>
 		<version>1.6.0</version>
 	</dependency>
+	
+	<dependency>
+        <groupId>csv_utils</groupId>
+        <artifactId>csv_utils</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </dependency>
+    
+    <dependency>
+		<groupId>org.scala-lang</groupId>
+		<artifactId>scala-library</artifactId>
+		<version>2.11.7</version>
+	</dependency>
+    
+    <dependency>
+      <groupId>de.multamedio</groupId>
+      <artifactId>scala_integration</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
     
   </dependencies>
 </project>
