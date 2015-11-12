@@ -13,7 +13,7 @@ public class ClojureWrapper extends ClojureNamespace {
 
   public Long sumAge (List<Person> persons) {
     return (Long) fn("sum-age").invoke(
-        data.fn("from-java").invoke(persons));
+      data.fn("from-java").invoke(persons));
   }
 
 }
