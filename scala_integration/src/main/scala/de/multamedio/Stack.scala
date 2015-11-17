@@ -14,5 +14,5 @@ class Stack[T] {
   def push(x: T) { elems = x :: elems }
   def top: T = elems.head
   def pop() { elems = elems.tail }
-  
+
 }

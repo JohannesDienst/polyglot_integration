@@ -26,22 +26,21 @@ public class JavaApp {
     dParam.toString(); // a is: 2.0 b is: 4.0
     dParam = new DefaultParam(5.0, 7.0);
     dParam.toString(); // a is: 5.0 b is: 7.0
-
     dParam.add(2.0, 3.0); // 5.0
-    
+
     Stack<Integer> stack = new Stack<Integer>();
     stack.push(27);
     // stack.push("28"); // Does not work
-    
+
     Kitty kitty = new Kitty();
     kitty.getName();
     kitty.setName("Happy Kitty");
     kitty.name_$eq("Teddy");
-    
+
     Monkey monk = new Monkey();
     monk.name();
     // setName() missing
     monk.name_$eq("Abby");
-    
+
   }
 }
