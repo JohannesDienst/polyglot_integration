@@ -1,5 +1,9 @@
 package de.multamedio;
 
+
+import scala.Tuple2;
+
+
 public class JavaApp {
 
   public static void main(String[] args) {
@@ -24,6 +28,8 @@ public class JavaApp {
 
     DefaultParam dParam = new DefaultParam();
     dParam.toString(); // a is: 2.0 b is: 4.0
+
+    // dParam = new DefaultParam(4.0) // Not defined constructor
     dParam = new DefaultParam(5.0, 7.0);
     dParam.toString(); // a is: 5.0 b is: 7.0
     dParam.add(2.0, 3.0); // 5.0
@@ -42,5 +48,9 @@ public class JavaApp {
     // setName() missing
     monk.name_$eq("Abby");
 
+    Tuple2<String, String> creator = new Tuple2<String, String>("Martin", "Odersky");
+    System.out.println(creator._1 + " " + creator._2);
+
   }
+
 }
