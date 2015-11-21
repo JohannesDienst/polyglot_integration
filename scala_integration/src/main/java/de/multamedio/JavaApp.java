@@ -34,7 +34,7 @@ public class JavaApp {
     dParam.toString(); // a is: 5.0 b is: 7.0
     dParam.add(2.0, 3.0); // 5.0
 
-    Stack<Integer> stack = new Stack<Integer>();
+    Stack<Integer> stack = new Stack<>();
     stack.push(27);
     // stack.push("28"); // Does not work
 
@@ -48,7 +48,7 @@ public class JavaApp {
     // setName() missing
     monk.name_$eq("Abby");
 
-    Tuple2<String, String> creator = new Tuple2<String, String>("Martin", "Odersky");
+    Tuple2<String, String> creator = new Tuple2<>("Martin", "Odersky");
     System.out.println(creator._1 + " " + creator._2);
 
   }
