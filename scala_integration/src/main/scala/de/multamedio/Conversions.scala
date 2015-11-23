@@ -8,4 +8,10 @@ class Conversions {
     list.add("am a list");
     list
   }
+
+  def scalaList() : Seq[Int] = {
+    val list = List(42, 27)
+    return list
+  }
+
 }

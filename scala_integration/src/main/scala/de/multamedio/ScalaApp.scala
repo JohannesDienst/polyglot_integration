@@ -1,6 +1,7 @@
 package de.multamedio
 
-import scala.collection.JavaConversions.asScalaBuffer
+import scala.collection.JavaConversions._
+import scala.collection.mutable._
 
 object ScalaApp {
 
@@ -17,5 +18,9 @@ object ScalaApp {
     val buffer = asScalaBuffer(list)
     buffer.foreach(println)
     list.foreach(println) // now works because of JavaConversions
+
+    val sum1 = JConversions.sum(seqAsJavaList(Seq(1, 2, 3)))
+    val sum2 = JConversions.sum(bufferAsJavaList(ArrayBuffer(1,2,3)))
+    val sum3 = JConversions.sum(bufferAsJavaList(ListBuffer(1,2,3)))
   }
 }

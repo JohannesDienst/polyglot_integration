@@ -1,6 +1,8 @@
 package de.multamedio;
 
 
+import java.util.List;
+
 import scala.Tuple2;
 
 
@@ -51,6 +53,8 @@ public class JavaApp {
     Tuple2<String, String> creator = new Tuple2<>("Martin", "Odersky");
     System.out.println(creator._1 + " " + creator._2);
 
+    Conversions con = new Conversions();
+    List scalaList = con.scalaList();
   }
 
 }
