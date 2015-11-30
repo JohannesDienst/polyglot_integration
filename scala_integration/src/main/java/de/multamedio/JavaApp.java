@@ -53,7 +53,7 @@ public class JavaApp {
 
     Conversions con = new Conversions();
 //    List scalaList = con.scalaList(); // Cannot convert from Seq to ...
-    
+
     Kitty.theMeaningOfLife();
     Kitty.thePurposeOfLife();
   }
