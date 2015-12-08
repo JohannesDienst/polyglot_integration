@@ -1,5 +1,5 @@
-.cache-main
-.cache-tests
+/bin
+.groovy
 /target
 .project
 .settings
