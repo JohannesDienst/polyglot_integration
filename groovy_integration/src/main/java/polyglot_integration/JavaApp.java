@@ -1,5 +1,6 @@
 package polyglot_integration;
 
+import groovy_integration.Humanoid;
 import groovy_integration.Jazzer;
 import groovy_integration.Person;
 import groovy_integration.Stack;
@@ -23,8 +24,12 @@ public class JavaApp {
     stack.top(); // Integer
     stack.pop(); // List<Integer>
 
-    // Traits
+    // Traits: Not working when we implement them
+    SpeakingCat helloKitty = new SpeakingCat();
 
     // Meta-Programming
+    Humanoid human = new Humanoid();
+    System.out.println(human.write());
+    System.out.println(human.speak());
   }
 }
