@@ -16,5 +16,22 @@ class GroovyApp
     singer.sing()
     assert singer instanceof Musician
     assert singer instanceof Jazzer
+
+    def humanoid = new Humanoid(language: "Esperanto")
+    println humanoid.speak()
+    println humanoid.language
+
+    // Duck Typing
+    println humanoid.write()
+
+    // Dynamic implementation
+    def speakingJazzer = new Jazzer() as SpeakTrait
+    println speakingJazzer.speak()
+
+    // SAM Types
+    // TBD
+
+    // Self Types
+    // TBD
   }
 }
