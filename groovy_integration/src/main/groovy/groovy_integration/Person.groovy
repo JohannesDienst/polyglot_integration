@@ -1,5 +1,8 @@
 package groovy_integration
 
+import groovy.transform.ToString
+
+@ToString
 class Person
 {
 

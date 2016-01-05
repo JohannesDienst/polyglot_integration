@@ -1,5 +1,7 @@
 package polyglot_integration;
 
+import java.util.List;
+
 import groovy_integration.Humanoid;
 import groovy_integration.Jazzer;
 import groovy_integration.Person;
@@ -22,14 +24,29 @@ public class JavaApp {
     Stack<Integer> stack = new Stack<>();
     stack.push(42);
     stack.top(); // Integer
-    stack.pop(); // List<Integer>
+    stack.pop(); // ArrayList<Integer>
 
     // Traits: Not working when we implement them
     SpeakingCat helloKitty = new SpeakingCat();
 
     // Meta-Programming
+    // Runtime
     Humanoid human = new Humanoid();
-    System.out.println(human.write());
-    System.out.println(human.speak());
+    human.write(); // Method WriteName is missing!
+    human.speak(); // Hello my name is Gigabit
+    
+    // Compile time
+    amelie.toString(); // groovy_integration.Person(Amelie, 1)
+    
+    // Closures
+    
+    // Collections
+    // lists
+    
+    // sets
+    
+    // maps
+    
+    // ranges
   }
 }
