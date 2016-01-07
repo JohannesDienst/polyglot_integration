@@ -44,9 +44,11 @@ public class JavaApp {
     Thing thing1 = new Thing("Joe");
     Thing thing2 = new Thing("Doe");
     Thing thing3 = thing1.plus(thing2);
-    System.out.println(thing3.name); // Joe Doe
+    System.out.println(thing3.getName()); // Joe Doe
 
     // Closures
+    JavaClosureClass clc = new JavaClosureClass();
+    clc.demonstrateClosureUsage();
 
     // Collections
     // lists
