@@ -39,5 +39,8 @@ class GroovyApp
     def thing2 = new Thing("Doe")
     def thing3 = thing1 + thing2
     println thing3.name // Joe Doe
+
+    // Closure
+    println ClosureUtil.doubler().call(42)
   }
 }
