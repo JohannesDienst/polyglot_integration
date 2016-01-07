@@ -1,11 +1,12 @@
 package polyglot_integration;
 
-import java.util.List;
-
 import groovy_integration.Humanoid;
 import groovy_integration.Jazzer;
+import groovy_integration.ListUtil;
 import groovy_integration.Person;
 import groovy_integration.Stack;
+
+import java.util.Map;
 
 public class JavaApp {
 
@@ -34,19 +35,26 @@ public class JavaApp {
     Humanoid human = new Humanoid();
     human.write(); // Method WriteName is missing!
     human.speak(); // Hello my name is Gigabit
-    
+
     // Compile time
     amelie.toString(); // groovy_integration.Person(Amelie, 1)
-    
+
     // Closures
-    
+
     // Collections
     // lists
-    
+    ListUtil.giveMeList(); // java.util.List
+
     // sets
-    
+    ListUtil.giveMeSet(); // java.util.HashSet
+
     // maps
-    
+    ListUtil.giveMeMap();
+    Map aMap = ListUtil.giveMeMap(); // java.util.LinkedHashMap
+    System.out.println(aMap.getClass().getName());
+
     // ranges
+    ListUtil.giveMeRange().get(2); // 3
+    groovy.lang.Range range = ListUtil.giveMeRange();
   }
 }
