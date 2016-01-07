@@ -5,6 +5,7 @@ import groovy_integration.Jazzer;
 import groovy_integration.ListUtil;
 import groovy_integration.Person;
 import groovy_integration.Stack;
+import groovy_integration.Thing;
 
 import java.util.Map;
 
@@ -38,6 +39,12 @@ public class JavaApp {
 
     // Compile time
     amelie.toString(); // groovy_integration.Person(Amelie, 1)
+
+    // Operator overloading
+    Thing thing1 = new Thing("Joe");
+    Thing thing2 = new Thing("Doe");
+    Thing thing3 = thing1.plus(thing2);
+    System.out.println(thing3.name); // Joe Doe
 
     // Closures
 
