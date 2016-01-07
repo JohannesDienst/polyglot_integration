@@ -1,5 +1,7 @@
 package polyglot_integration;
 
+import groovy.lang.Closure;
+import groovy_integration.ClosureUtil;
 import groovy_integration.Humanoid;
 import groovy_integration.Jazzer;
 import groovy_integration.ListUtil;
@@ -55,6 +57,11 @@ public class JavaApp {
 //    MethodClosure mc = new MethodClosure(new ClosureUtil(), "doubler");
 //    new ClosureUtil().op(Arrays.asList("This", "is", "closure!"), mc);
 //    System.out.println(((MethodClosure)ClosureUtil.doubler()).call(42));
+    
+    Object doubler = new ClosureUtil().doubler();
+    Closure clojureDoubler = (Closure) doubler;
+    System.out.println(clojureDoubler.call(42));
+    clojureDoubler.call(42);
 
     // Collections
     // lists

@@ -18,6 +18,6 @@ public class JavaClosureClass
   public void demonstrateClosureUsage() {
     MethodClosure cl = new MethodClosure(this, "shouldBeUsedAsClosure");
     groovy.op(Arrays.asList("This", "is", "closure!"), cl);
-}
+  }
 
 }

@@ -41,6 +41,6 @@ class GroovyApp
     println thing3.name // Joe Doe
 
     // Closure
-    println ClosureUtil.doubler().call(42)
+    println new ClosureUtil().doubler().call(42)
   }
 }

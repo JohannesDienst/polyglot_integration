@@ -3,7 +3,7 @@ package groovy_integration
 class ClosureUtil
 {
 
-  def static doubler() {
+  def doubler() {
     { message -> message * 2 }
   }
 
