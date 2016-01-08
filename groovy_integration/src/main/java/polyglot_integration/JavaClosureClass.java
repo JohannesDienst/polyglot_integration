@@ -11,11 +11,13 @@ public class JavaClosureClass
 
   private ClosureOperation groovy = new ClosureOperation();
 
-  private void shouldBeUsedAsClosure(Object o) {
-      System.out.println(o);
+  private void shouldBeUsedAsClosure(Object o)
+  {
+    System.out.println(o);
   }
 
-  public void demonstrateClosureUsage() {
+  public void demonstrateClosureUsage()
+  {
     MethodClosure cl = new MethodClosure(this, "shouldBeUsedAsClosure");
     groovy.op(Arrays.asList("This", "is", "closure!"), cl);
   }

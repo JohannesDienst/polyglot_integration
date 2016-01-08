@@ -46,20 +46,14 @@ public class JavaApp {
     Thing thing1 = new Thing("Joe");
     Thing thing2 = new Thing("Doe");
     Thing thing3 = thing1.plus(thing2);
-    System.out.println(thing3.getName()); // Joe Doe
+    thing3.getName(); // Joe Doe
 
     // Call method with closure
     JavaClosureClass clc = new JavaClosureClass();
     clc.demonstrateClosureUsage();
 
     // Handle closure return
-    // TODO: This is not working
-//    MethodClosure mc = new MethodClosure(new ClosureUtil(), "doubler");
-//    new ClosureUtil().op(Arrays.asList("This", "is", "closure!"), mc);
-//    System.out.println(((MethodClosure)ClosureUtil.doubler()).call(42));
-    
-    Object doubler = new ClosureUtil().doubler();
-    Closure clojureDoubler = (Closure) doubler;
+    Closure clojureDoubler = (Closure) new ClosureUtil().doubler();
     System.out.println(clojureDoubler.call(42));
     clojureDoubler.call(42);
 
