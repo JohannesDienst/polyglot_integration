@@ -48,6 +48,9 @@ public class JavaApp {
     Thing thing3 = thing1.plus(thing2);
     thing3.getName(); // Joe Doe
 
+    Thing thing4 = new Thing();
+    thing4.getName(); // Joe
+
     // Call method with closure
     JavaClosureClass clc = new JavaClosureClass();
     clc.demonstrateClosureUsage();
