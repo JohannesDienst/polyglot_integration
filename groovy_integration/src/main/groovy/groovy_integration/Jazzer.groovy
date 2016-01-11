@@ -8,4 +8,9 @@ class Jazzer implements Singer
     println "Got the rhythm"
   }
 
+  def growl()
+  {
+    return "ARGHHHH"
+  }
+
 }
