@@ -19,6 +19,7 @@ public class JavaApp {
     nicole.increaseAge(1);
     nicole.getName(); // Nicole
     nicole.getAge(); // 31
+    amelie.setName("Amy");
 
     Jazzer jazz = new Jazzer();
     jazz.sing();
