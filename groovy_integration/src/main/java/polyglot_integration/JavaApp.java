@@ -37,7 +37,7 @@ public class JavaApp {
     // Meta-Programming
     // Runtime
     Humanoid human = new Humanoid();
-    human.write(); // Method WriteName is missing!
+    System.out.println(human.write()); // Method WriteName is missing!
     human.speak(); // Hello my name is Gigabit
     human.getLanguage(); // English
 
