@@ -20,6 +20,7 @@ class GroovyApp
     def humanoid = new Humanoid(language: "Esperanto")
     println humanoid.speak()
     println humanoid.language
+    println humanoid.speaksLanguage("English")
 
     // Duck Typing
     println humanoid.write()

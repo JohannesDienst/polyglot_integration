@@ -7,4 +7,6 @@ trait SpeakTrait
   String speak() {"Hello my name is Gigabit"}
 
   String write() { writeName() }
+
+  abstract Boolean speaksLanguage(language)
 }
