@@ -8,7 +8,7 @@ class Humanoid implements SpeakTrait
     "Method ${name.capitalize()} is missing!"
   }
 
-  Boolean speaksLanguage(Object language)
+  Boolean speaksLanguage(language)
   {
     return this.language.equals(language)
   }
