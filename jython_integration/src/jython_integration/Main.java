@@ -1,10 +1,11 @@
 package jython_integration;
 
-public class Main {
+public class Main
+{
 
   public static void main(String[] args)
   {
-	// Obtain an instance of the object factory
+    // Obtain an instance of the object factory
     JythonObjectFactory factory = JythonObjectFactory.getInstance();
 
     // Call the createObject() method on the object factory by
@@ -12,7 +13,7 @@ public class Main {
     // in String format. The returning object is casted to the the same
     // type as the Java interface and stored into a variable.
     BuildingType building = (BuildingType) factory.createObject(
-        BuildingType.class, "Building");
+      BuildingType.class, "Building");
     // Populate the object with values using the setter methods
     building.setBuildingName("BUILDING-A");
     building.setBuildingAddress("100 MAIN ST.");
