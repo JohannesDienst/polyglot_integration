@@ -1,6 +1,6 @@
 package jython_integration;
 
-public interface BuildingType {
+public interface IBuilding {
 
   public String getBuildingName();
   public String getBuildingAddress();

@@ -1,6 +1,6 @@
-from jython_integration import BuildingType
+from jython_integration import IBuilding
 
-class Building(BuildingType):
+class Building(IBuilding):
 
     def __init__(self):
         self.name = None
