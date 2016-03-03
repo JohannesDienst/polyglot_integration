@@ -14,10 +14,11 @@ public class Shortcutting
     pi.exec("halfanswer = integer/2");
     PyInteger half = (PyInteger)pi.get("halfanswer");
     System.out.println("halfanswer: " + half.asInt());
+    pi.close();
 
     System.out.println("---------------------------");
     PyModule module = new PyModule();
-    System.out.println(module.triple(2));
-    System.out.println(module.triple(2.2));
+    module.triple(2); // 8
+    module.triple(2.2); // 10.648000000000003
   }
 }
